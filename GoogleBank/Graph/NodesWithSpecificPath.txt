@@ -1,0 +1,30 @@
+Question Details
+This question uses a directed graph which contains three types of nodes:
+black squares
+blue diamonds
+red circles
+Candidates are asked to return the set of all nodes in the graph that start a given type of path.
+
+Path Definition
+The specific type of path is:
+“Return the set of nodes which start one or more paths that pass through a positive number of uniquely-red circle nodes and end in a blue diamond node.”
+Therefore, for a path to be valid, it must:
+Have at least three nodes
+The first node can be any color
+The last node must be a blue diamond
+All intermediate nodes must be red circles
+There must be at least one red circle in the path
+Interview Guidance
+To elaborate, draw a basic graph on the board while explaining that this question will use a graph.
+The graph drawn should contain:
+At least one node with a successful and unsuccessful path leading from it
+A chain of red circle nodes
+More than one blue diamond node
+This normally covers most of the corner cases.
+Lead the candidate through a couple of examples of nodes which meet the criteria and nodes which do not, and ask them to walk through the rest.
+You can use the following graph.
+The nodes to be returned are: E, G, and H.
+Common Issues
+How to address frequently asked questions or places where the candidate commonly gets stuck.
+Some candidates think any red circle node that ends in a blue diamond node should count
+(in the graph above that would mean that F and B were valid)
